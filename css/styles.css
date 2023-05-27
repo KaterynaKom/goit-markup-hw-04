@@ -348,6 +348,15 @@ button:focus {
     background-color: var(--logo-brand-color);
 }
 
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--pressed-state-color);
+}
+
+.networks {
+    fill: var(--light-mode-background-color);
+}
+
 .card {
     background-color: var(--page-background-color);
 }
@@ -392,6 +401,10 @@ button:focus {
     color: #8e8f99;
 }
 
+.lol {
+    fill: currentColor;
+}
+
 .log-link:hover,
 .log-link:focus {
     border-color: var(--pressed-state-color);
@@ -429,6 +442,46 @@ button:focus {
     letter-spacing: 0.02em;
     display: block;
     width: 264px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-social {
+    margin-left: 120px;
+}
+
+.footer-social-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--page-background-color);
+}
+
+.footer-social-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-social-list {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--logo-brand-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio {
