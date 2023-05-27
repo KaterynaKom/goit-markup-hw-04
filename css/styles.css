@@ -26,6 +26,7 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+    list-style: none;
 }
 
 img {
@@ -169,6 +170,17 @@ button:focus {
     padding: 188px 0;
 }
 
+.background {
+    max-width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)) ,url(../images/backgroundimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .main-title {
     font-weight: 700;
     font-size: 56px;
@@ -208,6 +220,16 @@ button:focus {
 
 .work-principles-item {
     width: calc((100% - 72px) / 4);
+}
+.icon-work-principles {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F4F4FD;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        height: 112px;
+        padding: 24px 100px px;
 }
 
 .work-principles-description-title {
@@ -295,15 +317,85 @@ button:focus {
     text-align: center;
 }
 .our-team-description-text {
+    margin-bottom: 8px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;        
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--body-text-color);
-    text-align: center;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-list {
+    width: 40px;
+    height: 40px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--logo-brand-color);
 }
 
 .card {
     background-color: var(--page-background-color);
+}
+
+.customers {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.title-customers {
+    margin-bottom: 72px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--body-brand-color);
+
+}
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.customers-item {
+    width: 168px;
+    height: 88px;
+}
+
+.log-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    color: #8e8f99;
+}
+
+.log-link:hover,
+.log-link:focus {
+    border-color: var(--pressed-state-color);
+    color: var(--pressed-state-color) ;
 }
 
 .page-footer {
