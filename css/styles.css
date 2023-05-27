@@ -484,6 +484,11 @@ button:focus {
     align-items: center;
 }
 
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: #31d0aa;
+}
+
 .portfolio {
     padding: 96px 0 120px;
 }
